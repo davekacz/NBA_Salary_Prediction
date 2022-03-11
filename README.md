@@ -1,6 +1,8 @@
 # NBA Salary Prediction
 
-Have 2 main datasets.  
+Georgia Tech ISyE 7406 DMSL Final Project
+
+I've created 2 main datasets.  
 
 ### 2017 - 2021 Dataset
 Almost all clean data, few missing advanced stats, most likely can be replaced by 0 values.  Need to investigate. 
