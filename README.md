@@ -17,7 +17,7 @@ How to handle 2020 covid season, numbers are low.  Drop season?  Change all valu
 
 How to handle current partial season data.  
 
-How to handle traded players during the season.  They show up as seperate rows for each team played.  
+How to handle traded players during the season.  They show up as seperate rows for each team played with stats relevant to that team.
 
 ### Sources
 
