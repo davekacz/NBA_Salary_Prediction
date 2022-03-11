@@ -2,7 +2,7 @@
 
 NBA Salary Prediction
 
-Data pulled from these sources:  
+Data scraped from these sources:  
 
 Players Stats:
 https://www.nbastuffer.com/2020-2021-nba-player-stats/
