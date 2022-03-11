@@ -6,7 +6,7 @@ Have 2 main datasets.
 Almost all clean data, few missing advanced stats, most likely can be replaced by 0 values.  Need to investigate. 
 
 ### 2013 - 2021 Dataset
-Missing lots of advanced stats in earlier seasons.  
+Missing lots of advanced stats in earlier seasons.  Remove advanced stats from analysis?  Can probably calculate some of the stats based on available stats.  Need to investigate.
 
 ### To Do
 Deal with categorical variables.  
