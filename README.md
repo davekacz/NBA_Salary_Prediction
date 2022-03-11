@@ -13,7 +13,7 @@ Missing lots of advanced stats in earlier seasons.  Remove advanced stats from a
 ### To Do
 Deal with categorical variables.  
 
-How to handle 2020 covid season, numbers are low.  Drop season?  Change all values to per game?  
+How to handle 2020 covid season, numbers are low.  Drop season?  Change all values across dataset to per game?  
 
 How to handle current partial season data.  
 
