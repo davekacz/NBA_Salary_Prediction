@@ -1,6 +1,4 @@
-# NBA
-
-NBA Salary Prediction
+# NBA Salary Prediction
 
 Have 2 main datasets.  
 
