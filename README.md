@@ -11,11 +11,13 @@ Almost all clean data, few missing advanced stats, most likely can be replaced b
 Missing lots of advanced stats in earlier seasons.  Remove advanced stats from analysis?  Can probably calculate some of the stats based on available stats.  Need to investigate.
 
 ### To Do
-Deal with categorical variables.  
+Deal with categorical variables.  Team, Position (some multiples, ie. C-F)
 
 How to handle 2020 covid season, numbers are low.  Drop season?  Change all values across dataset to per game?  
 
 How to handle current partial season data.  
+
+How to handle traded players during the season.  They show up as seperate rows for each team played.  
 
 ### Sources
 
