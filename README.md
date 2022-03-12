@@ -2,7 +2,7 @@
 
 Georgia Tech ISyE 7406 DMSL Final Project
 
-## Questions to Answer after training models
+## Questions to answer after training models
 
 * Who are the highest value players?  Players the model thinks should be paid more than they actually are.  What teams has the most value, the least.  
 
