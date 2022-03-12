@@ -28,7 +28,8 @@ Georgia Tech ISyE 7406 DMSL Final Project
 
 ## Model to do
 
-* Normalize, standardize data?
+* Normalize, standardize data? https://towardsai.net/p/data-science/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
+
 * Variable Selection
 
 ### Regression Methods - Possible Models to use
