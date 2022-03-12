@@ -31,7 +31,7 @@ Georgia Tech ISyE 7406 DMSL Final Project
 * Normalize, standardize data?
 * Variable Selection
 
-### Regression Methods
+### Regression Methods - Possible Models to use
 
 https://scikit-learn.org/stable/supervised_learning.html
 
