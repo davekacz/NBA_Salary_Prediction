@@ -2,22 +2,50 @@
 
 Georgia Tech ISyE 7406 DMSL Final Project
 
-I've created 2 main datasets.  
+## Questions to Answer after training models
 
-### 2017 - 2021 Dataset
-Almost all clean data, few missing advanced stats, most likely can be replaced by 0 values.  Need to investigate. 
+* Who are the highest value players?  Players the model thinks should be paid more than they actually are.  What teams has the most value, the least.  
 
-### 2013 - 2021 Dataset
-Missing lots of advanced stats in earlier seasons.  Remove advanced stats from analysis?  Can probably calculate some of the stats based on available stats.  Need to investigate.
+* Regular Stats vs Advanced Stats.  Does including advanced stats in the model make them perform significantly more accurately?  
 
-### To Do
-Deal with categorical variables.  Team, Position (some multiples, ie. C-F)
+## Data Clean Up Notes
 
-How to handle 2020 covid season, numbers are low.  Drop season?  Change all values across dataset to per game?  
+* Data scraped, cleaned, organized. 
+
+* Traded players combined.  Some columns averaged, some added.  This may not be perfect depending on games played splits for averages.  Added a traded field
+
+* Some salary data missing.  Some noticible players, but very few.  These rows dropped. 
+
+* About ~1800 ORTG and DRTG values missing.  Otherwise all data is there.  
+
+## Data to do
+
+* Sort categorical variable, Position.  Probably just drop team?
+
+## Explore Data
+
+* Covariance Plots, Violin/Histogram plots
+
+## Model to do
+
+* Normalize, standardize data?
+* Variable Selection
+
+### Regression Methods
+
+https://scikit-learn.org/stable/supervised_learning.html
+
+* Linear Regression: OLS, Ridge, Lasso, Elastic Net
+* Support Vector Machines
+* Nearest Neighbors
+* Tree models (random forest)
+* Ensemble Methods: Bagging, aDaBoost
+
+## Other thoughts
+
+How to handle 2020 covid season
 
 How to handle current partial season data.  
-
-How to handle traded players during the season.  They show up as seperate rows for each team played with stats relevant to that team.
 
 ### Sources
 
