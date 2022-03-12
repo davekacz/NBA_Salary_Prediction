@@ -1,4 +1,10 @@
-## Data Clean Up
+## Data Clean Up Notes
+
+* Data scraped, cleaned, organized. 
+
+* Traded players combined.  Some columns averaged, some added.  This may not be perfect depending on games played splits for averages.  Added a traded field
+
+* Some salary data missing.  Some noticible players, but very few.
 
 
 ## Questions to Answer after training models
