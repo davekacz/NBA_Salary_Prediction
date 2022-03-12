@@ -12,15 +12,15 @@ Georgia Tech ISyE 7406 DMSL Final Project
 
 * Data scraped, cleaned, organized. 
 
-* Traded players combined.  Some columns averaged, some added.  This may not be perfect depending on games played splits for averages.  Added a traded field
+* Traded players combined.  Some columns averaged, some added.  This may not be perfect depending on games played splits for averages.  
+
+* Traded column not working correctly.  Can revisit or just drop.  
+
+* Position has been one hot encoded.  Earlier data lists PF, PG, SG, etc...  later data is G, F, C we may want to just make 3 dummy variables?  Transfer PF to F, PG to G...
 
 * Some salary data missing.  Some noticible players, but very few.  These rows dropped. 
 
 * About ~1800 ORTG and DRTG values missing.  Otherwise all data is there.  
-
-## Data to do
-
-* Sort categorical variable, Position.  Probably just drop team?
 
 ## Explore Data
 
