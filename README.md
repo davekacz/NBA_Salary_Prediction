@@ -41,12 +41,12 @@ https://scikit-learn.org/stable/supervised_learning.html
 * Tree models (random forest)
 * Ensemble Methods: Bagging, aDaBoost
 
-## Scoring
+### Scoring
 
 * When we cross validate should we drop the same players through all years?
 * MSE?  Could use input on how we should evaluate the best model.  Kind of weak in this area.  
 
-### Other thoughts
+## Other thoughts
 
 How to handle 2020 covid season
 
