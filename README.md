@@ -26,6 +26,8 @@ Georgia Tech ISyE 7406 DMSL Final Project
 
 * Covariance Plots, Violin/Histogram plots
 
+* Data is right skewed, see histogram plot of salary.  Box-Cox transformation?
+
 ## Model to do
 
 * Normalize, standardize data? https://towardsai.net/p/data-science/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
