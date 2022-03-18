@@ -6,6 +6,15 @@ Georgia Tech ISyE 7406 DMSL Final Project
 
 * Who are the highest value players?  Players the model thinks should be paid more than they actually are.  What teams has the most value, the least.  
 
+Once we come up with best performing model, can grab the best estimator from all the training.
+
+Train the model on all previous season data.  Apply a scaling factor where appropriate on current season data, then predict on it.  
+
+Inaccuracies aren't exactly *wrong*.  We can consider the results what a player is actually worth.  Doing some testing on the simple models, Steph Curry in 2019 was worst prediction.  Something like 30M difference.  But that season he was hurt and only played 5 games.  So maybe he wasn't worth his 40M contract?  
+
+Anyway we can see what our model thinks a player is worth, highlight some highs and lows.  Then do a groupby on teams and do the same.  
+
+
 * Regular Stats vs Advanced Stats.  Does including advanced stats in the model make them perform significantly more accurately?  
 
 ## Data Clean Up Notes
@@ -50,6 +59,7 @@ https://scikit-learn.org/stable/supervised_learning.html
 * MSE?  Could use input on how we should evaluate the best model.  Kind of weak in this area.  
 * https://towardsdatascience.com/what-are-the-best-metrics-to-evaluate-your-regression-model-418ca481755b
 * Will need to transform results from models with inverse box cox transformation to come up with meaningful analysis.
+
 
 ## Other thoughts
 
