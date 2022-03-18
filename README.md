@@ -48,6 +48,7 @@ https://scikit-learn.org/stable/supervised_learning.html
 
 * When we cross validate should we drop the same players through all years?
 * MSE?  Could use input on how we should evaluate the best model.  Kind of weak in this area.  
+* https://towardsdatascience.com/what-are-the-best-metrics-to-evaluate-your-regression-model-418ca481755b
 
 ## Other thoughts
 
