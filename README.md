@@ -26,7 +26,7 @@ Georgia Tech ISyE 7406 DMSL Final Project
 
 * Covariance Plots, Violin/Histogram plots
 
-* Data is right skewed, see histogram plot of salary.  Box-Cox transformation?
+* Data is right skewed, see histogram plot of salary. Box-Cox transformation helps this.  Also gets rid of need to transform salaries based on year/salary cap.  See data explore notebook
 
 ## Model to do
 
@@ -49,6 +49,7 @@ https://scikit-learn.org/stable/supervised_learning.html
 * When we cross validate should we drop the same players through all years?
 * MSE?  Could use input on how we should evaluate the best model.  Kind of weak in this area.  
 * https://towardsdatascience.com/what-are-the-best-metrics-to-evaluate-your-regression-model-418ca481755b
+* Will need to transform results from models with inverse box cox transformation to come up with meaningful analysis.
 
 ## Other thoughts
 
