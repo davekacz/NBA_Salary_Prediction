@@ -15,49 +15,46 @@ Inaccuracies aren't exactly *wrong*.  We can consider the results what a player 
 Anyway we can see what our model thinks a player is worth, highlight some highs and lows.  Then do a groupby on teams and do the same.  
 
 
-* Regular Stats vs Advanced Stats.  Does including advanced stats in the model make them perform significantly more accurately?  
+* Regular Stats vs Advanced Stats.  Does including advanced stats in the model make them perform significantly more accurately?  Not sure if I feel like adding this...  
 
 ## Data Clean Up Notes
 
-* Data scraped, cleaned, organized. 
+* Data scraped, cleaned, organized. -- Done
 
-* Traded players combined.  Some columns averaged, some added.  This may not be perfect depending on games played splits for averages.  
-
-* Traded column not working correctly.  Can revisit or just drop.  
+* Traded players combined.  Some columns averaged, some added.  This may not be perfect depending on games played splits for averages.  -- Done
 
 * ~~Position has been one hot encoded.  Earlier data lists PF, PG, SG, etc...  later data is G, F, C we may want to just make 3 dummy variables?  Transfer PF to F, PG to G...~~
 
-* Some salary data missing.  Some noticible players, but very few.  These rows dropped. 
+* Some salary data missing.  Some noticible players, but very few.  These rows dropped. -- Done
 
-* About ~1800 ORTG and DRTG values missing.  Otherwise all data is there.  
+* About ~1800 ORTG and DRTG values missing.  Otherwise all data is there.  These columns have been dropped -- Done
 
 ## Explore Data
 
 * Covariance Plots, Violin/Histogram plots
 
-* Data is right skewed, see histogram plot of salary. Box-Cox transformation helps this.  Also gets rid of need to transform salaries based on year/salary cap.  See data explore notebook
+* Data is right skewed, see histogram plot of salary. Box-Cox transformation helps this.  Also gets rid of need to transform salaries based on year/salary cap.  See data explore notebook -- Done
 
 ## Model to do
 
-* Normalize, standardize data? https://towardsai.net/p/data-science/how-when-and-why-should-you-normalize-standardize-rescale-your-data-3f083def38ff
+* Normalize, standardize data? -- Done
 
-* Variable Selection
+* Variable Selection -- Done
 
 ### Regression Methods - Possible Models to use
 
 https://scikit-learn.org/stable/supervised_learning.html
 
-* Linear Regression: OLS, Ridge, Lasso, Elastic Net
-* Support Vector Machines
-* Nearest Neighbors
-* Tree models (random forest)
+* Linear Regression: OLS, Ridge, Lasso, Elastic Net -- Done
+* Support Vector Machines -- Done
+* Nearest Neighbors -- Done
+* Tree models (random forest) -- Done
 * Ensemble Methods: Bagging, aDaBoost
 
 ### Scoring
 
-* When we cross validate should we drop the same players through all years?
-* MSE?  Could use input on how we should evaluate the best model.  Kind of weak in this area.  
-* https://towardsdatascience.com/what-are-the-best-metrics-to-evaluate-your-regression-model-418ca481755b
+* When we cross validate should we drop the same players through all years? -- Meh...  Didn't do this
+
 * Will need to transform results from models with inverse box cox transformation to come up with meaningful analysis.
 
 
