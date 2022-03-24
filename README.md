@@ -53,7 +53,7 @@ https://scikit-learn.org/stable/supervised_learning.html
 
 ### Scoring
 
-* When we cross validate should we drop the same players through all years?
+* When we cross validate should we drop the same players through all years? -- Meh...  Didn't do this
 
 * Will need to transform results from models with inverse box cox transformation to come up with meaningful analysis.
 
