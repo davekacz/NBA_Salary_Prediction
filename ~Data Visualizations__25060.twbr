@@ -1,0 +1,1842 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='2021_predictions' inline='true' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2021_predictions' name='textscan.11ryev217l0qqr1gba0jv0ffhly1'>
+            <connection class='textscan' directory='C:/Users/kylem/NBA_Salary_Prediction' filename='2021_predictions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.11ryev217l0qqr1gba0jv0ffhly1' name='2021_predictions.csv' table='[2021_predictions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='FULL NAME' ordinal='0' />
+            <column datatype='string' name='TEAM' ordinal='1' />
+            <column datatype='integer' name='True Salary' ordinal='2' />
+            <column datatype='integer' name='Predicted Salary' ordinal='3' />
+            <column datatype='integer' name='Error' ordinal='4' />
+            <column datatype='integer' name='Absolute Error' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.11ryev217l0qqr1gba0jv0ffhly1' name='2021_predictions.csv' table='[2021_predictions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='FULL NAME' ordinal='0' />
+            <column datatype='string' name='TEAM' ordinal='1' />
+            <column datatype='integer' name='True Salary' ordinal='2' />
+            <column datatype='integer' name='Predicted Salary' ordinal='3' />
+            <column datatype='integer' name='Error' ordinal='4' />
+            <column datatype='integer' name='Absolute Error' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2021_predictions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FULL NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FULL NAME]</local-name>
+            <parent-name>[2021_predictions.csv]</parent-name>
+            <remote-alias>FULL NAME</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TEAM]</local-name>
+            <parent-name>[2021_predictions.csv]</parent-name>
+            <remote-alias>TEAM</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>True Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[True Salary]</local-name>
+            <parent-name>[2021_predictions.csv]</parent-name>
+            <remote-alias>True Salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Predicted Salary</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Predicted Salary]</local-name>
+            <parent-name>[2021_predictions.csv]</parent-name>
+            <remote-alias>Predicted Salary</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Error</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Error]</local-name>
+            <parent-name>[2021_predictions.csv]</parent-name>
+            <remote-alias>Error</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Absolute Error</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Absolute Error]</local-name>
+            <parent-name>[2021_predictions.csv]</parent-name>
+            <remote-alias>Absolute Error</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Full Name' datatype='string' name='[FULL NAME]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Full Name (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[FULL NAME]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;All Stars&quot;'>
+            <value>&quot;Andrew Wiggins&quot;</value>
+            <value>&quot;Chris Paul&quot;</value>
+            <value>&quot;Darius Garland&quot;</value>
+            <value>&quot;Dejounte Murray&quot;</value>
+            <value>&quot;DeMar DeRozan&quot;</value>
+            <value>&quot;Devin Booker&quot;</value>
+            <value>&quot;Donovan Mitchell&quot;</value>
+            <value>&quot;Draymond Green&quot;</value>
+            <value>&quot;Fred VanVleet&quot;</value>
+            <value>&quot;Giannis Antetokounmpo&quot;</value>
+            <value>&quot;Ja Morant&quot;</value>
+            <value>&quot;James Harden&quot;</value>
+            <value>&quot;Jarrett Allen&quot;</value>
+            <value>&quot;Jayson Tatum&quot;</value>
+            <value>&quot;Jimmy Butler&quot;</value>
+            <value>&quot;Joel Embiid&quot;</value>
+            <value>&quot;Karl-Anthony Towns&quot;</value>
+            <value>&quot;Kevin Durant&quot;</value>
+            <value>&quot;Khris Middleton&quot;</value>
+            <value>&quot;LaMelo Ball&quot;</value>
+            <value>&quot;LeBron James&quot;</value>
+            <value>&quot;Luka Doncic&quot;</value>
+            <value>&quot;Nikola Jokic&quot;</value>
+            <value>&quot;Rudy Gobert&quot;</value>
+            <value>&quot;Stephen Curry&quot;</value>
+            <value>&quot;Trae Young&quot;</value>
+            <value>&quot;Zach LaVine&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Team' datatype='string' name='[TEAM]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Team (group) 1]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[TEAM]' new-bin='true'>
+          <bin default-name='false' value='&quot;Non-Playoff Teams&quot;'>
+            <value>&quot;Atl&quot;</value>
+            <value>&quot;Cha&quot;</value>
+            <value>&quot;Det&quot;</value>
+            <value>&quot;Hou&quot;</value>
+            <value>&quot;Ind&quot;</value>
+            <value>&quot;Lal&quot;</value>
+            <value>&quot;Nor&quot;</value>
+            <value>&quot;Nyk&quot;</value>
+            <value>&quot;Okc&quot;</value>
+            <value>&quot;Orl&quot;</value>
+            <value>&quot;Por&quot;</value>
+            <value>&quot;Sac&quot;</value>
+            <value>&quot;San&quot;</value>
+            <value>&quot;Was&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Playoff Teams&quot;'>
+            <value>&quot;Bos&quot;</value>
+            <value>&quot;Bro&quot;</value>
+            <value>&quot;Chi&quot;</value>
+            <value>&quot;Cle&quot;</value>
+            <value>&quot;Dal&quot;</value>
+            <value>&quot;Den&quot;</value>
+            <value>&quot;Gol&quot;</value>
+            <value>&quot;Lac&quot;</value>
+            <value>&quot;Mem&quot;</value>
+            <value>&quot;Mia&quot;</value>
+            <value>&quot;Mil&quot;</value>
+            <value>&quot;Min&quot;</value>
+            <value>&quot;Phi&quot;</value>
+            <value>&quot;Pho&quot;</value>
+            <value>&quot;Tor&quot;</value>
+            <value>&quot;Uta&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Team (group) 2]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[TEAM]' new-bin='true'>
+          <bin default-name='false' value='&quot;Large Market Teams&quot;'>
+            <value>&quot;Atl&quot;</value>
+            <value>&quot;Bos&quot;</value>
+            <value>&quot;Bro&quot;</value>
+            <value>&quot;Chi&quot;</value>
+            <value>&quot;Dal&quot;</value>
+            <value>&quot;Gol&quot;</value>
+            <value>&quot;Hou&quot;</value>
+            <value>&quot;Lac&quot;</value>
+            <value>&quot;Lal&quot;</value>
+            <value>&quot;Nyk&quot;</value>
+            <value>&quot;Phi&quot;</value>
+            <value>&quot;Pho&quot;</value>
+            <value>&quot;Tor&quot;</value>
+            <value>&quot;Was&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Medium Market Teams&quot;'>
+            <value>&quot;Cle&quot;</value>
+            <value>&quot;Den&quot;</value>
+            <value>&quot;Det&quot;</value>
+            <value>&quot;Mia&quot;</value>
+            <value>&quot;Min&quot;</value>
+            <value>&quot;Orl&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Small Market Teams&quot;'>
+            <value>&quot;Cha&quot;</value>
+            <value>&quot;Ind&quot;</value>
+            <value>&quot;Mem&quot;</value>
+            <value>&quot;Mil&quot;</value>
+            <value>&quot;Nor&quot;</value>
+            <value>&quot;Okc&quot;</value>
+            <value>&quot;Por&quot;</value>
+            <value>&quot;Sac&quot;</value>
+            <value>&quot;San&quot;</value>
+            <value>&quot;Uta&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Team (group) 3]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[TEAM]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Playoff Teams&quot;'>
+            <value>&quot;Bos&quot;</value>
+            <value>&quot;Bro&quot;</value>
+            <value>&quot;Chi&quot;</value>
+            <value>&quot;Cle&quot;</value>
+            <value>&quot;Dal&quot;</value>
+            <value>&quot;Den&quot;</value>
+            <value>&quot;Gol&quot;</value>
+            <value>&quot;Lac&quot;</value>
+            <value>&quot;Mem&quot;</value>
+            <value>&quot;Mia&quot;</value>
+            <value>&quot;Mil&quot;</value>
+            <value>&quot;Min&quot;</value>
+            <value>&quot;Phi&quot;</value>
+            <value>&quot;Pho&quot;</value>
+            <value>&quot;Tor&quot;</value>
+            <value>&quot;Uta&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Team (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[TEAM]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;Bro, Lal, Nyk and 2 more&quot;'>
+            <value>&quot;Bro&quot;</value>
+            <value>&quot;Lal&quot;</value>
+            <value>&quot;Nyk&quot;</value>
+            <value>&quot;Por&quot;</value>
+            <value>&quot;Was&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='2021_predictions.csv' datatype='table' name='[__tableau_internal_object_id__].[2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Team (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bro, Lal, Nyk and 2 more&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Top Four Seeds&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Team (group) 1]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Det&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Uta&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Atl&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Non-Playoff Teams&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Okc&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Por&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lac&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gol&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Was&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cle&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sac&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Nor&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bos&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Orl&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mil&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;San&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mem&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Min&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nyk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hou&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Den&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tor&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bro&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Phi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Playoff Teams&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ind&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cha&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pho&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[Team (group)]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;Bro, Lal, Nyk and 2 more&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Full Name (group)]' type='palette'>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;All Stars&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Team (group) 2]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Det&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Uta&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Atl&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Large Market Teams&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Okc&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Por&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lac&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gol&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Was&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cle&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sac&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Nor&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bos&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Orl&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mil&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;San&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mem&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Min&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nyk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hou&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Small Market Teams&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Den&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tor&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bro&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Medium Market Teams&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Phi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ind&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cha&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pho&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Team (group) 3]' type='palette'>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Playoff Teams&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='2021_predictions.csv' id='2021_predictions.csv_2A5F68DD223A4B9B89FADC32F58B2C40'>
+            <properties context=''>
+              <relation connection='textscan.11ryev217l0qqr1gba0jv0ffhly1' name='2021_predictions.csv' table='[2021_predictions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='FULL NAME' ordinal='0' />
+                  <column datatype='string' name='TEAM' ordinal='1' />
+                  <column datatype='integer' name='True Salary' ordinal='2' />
+                  <column datatype='integer' name='Predicted Salary' ordinal='3' />
+                  <column datatype='integer' name='Error' ordinal='4' />
+                  <column datatype='integer' name='Absolute Error' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Predicted Salaries versus True Salaries Per Player</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2021_predictions' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2zvkf0j0whl61b0qtcy0qumgkd'>
+            <column caption='Full Name' datatype='string' name='[FULL NAME]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Full Name (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[FULL NAME]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;All Stars&quot;'>
+                  <value>&quot;Andrew Wiggins&quot;</value>
+                  <value>&quot;Chris Paul&quot;</value>
+                  <value>&quot;Darius Garland&quot;</value>
+                  <value>&quot;Dejounte Murray&quot;</value>
+                  <value>&quot;DeMar DeRozan&quot;</value>
+                  <value>&quot;Devin Booker&quot;</value>
+                  <value>&quot;Donovan Mitchell&quot;</value>
+                  <value>&quot;Draymond Green&quot;</value>
+                  <value>&quot;Fred VanVleet&quot;</value>
+                  <value>&quot;Giannis Antetokounmpo&quot;</value>
+                  <value>&quot;Ja Morant&quot;</value>
+                  <value>&quot;James Harden&quot;</value>
+                  <value>&quot;Jarrett Allen&quot;</value>
+                  <value>&quot;Jayson Tatum&quot;</value>
+                  <value>&quot;Jimmy Butler&quot;</value>
+                  <value>&quot;Joel Embiid&quot;</value>
+                  <value>&quot;Karl-Anthony Towns&quot;</value>
+                  <value>&quot;Kevin Durant&quot;</value>
+                  <value>&quot;Khris Middleton&quot;</value>
+                  <value>&quot;LaMelo Ball&quot;</value>
+                  <value>&quot;LeBron James&quot;</value>
+                  <value>&quot;Luka Doncic&quot;</value>
+                  <value>&quot;Nikola Jokic&quot;</value>
+                  <value>&quot;Rudy Gobert&quot;</value>
+                  <value>&quot;Stephen Curry&quot;</value>
+                  <value>&quot;Trae Young&quot;</value>
+                  <value>&quot;Zach LaVine&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Predicted Salary]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[True Salary]' role='measure' type='quantitative' />
+            <column-instance column='[FULL NAME]' derivation='None' name='[none:FULL NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Predicted Salary]' derivation='Sum' name='[sum:Predicted Salary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[True Salary]' derivation='Sum' name='[sum:True Salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Predicted Salary:qk]' field-type='quantitative' max='47559325' min='-2038474' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Full Name (group)]' value='All Stars versus Rest of League'>
+              <formatted-text>
+                <run>All Stars versus Rest of League</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]' />
+              <color column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Full Name (group)]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Predicted Salary:qk]</rows>
+        <cols>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:True Salary:qk]</cols>
+      </table>
+      <simple-id uuid='{C92269E7-5E8E-44F0-9664-8E39CA1B7FBD}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Prediction Error by Team Success</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2021_predictions' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2zvkf0j0whl61b0qtcy0qumgkd'>
+            <column datatype='integer' name='[Error]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[TEAM]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Team (group) 1]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[TEAM]' new-bin='true'>
+                <bin default-name='false' value='&quot;Non-Playoff Teams&quot;'>
+                  <value>&quot;Atl&quot;</value>
+                  <value>&quot;Cha&quot;</value>
+                  <value>&quot;Det&quot;</value>
+                  <value>&quot;Hou&quot;</value>
+                  <value>&quot;Ind&quot;</value>
+                  <value>&quot;Lal&quot;</value>
+                  <value>&quot;Nor&quot;</value>
+                  <value>&quot;Nyk&quot;</value>
+                  <value>&quot;Okc&quot;</value>
+                  <value>&quot;Orl&quot;</value>
+                  <value>&quot;Por&quot;</value>
+                  <value>&quot;Sac&quot;</value>
+                  <value>&quot;San&quot;</value>
+                  <value>&quot;Was&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Playoff Teams&quot;'>
+                  <value>&quot;Bos&quot;</value>
+                  <value>&quot;Bro&quot;</value>
+                  <value>&quot;Chi&quot;</value>
+                  <value>&quot;Cle&quot;</value>
+                  <value>&quot;Dal&quot;</value>
+                  <value>&quot;Den&quot;</value>
+                  <value>&quot;Gol&quot;</value>
+                  <value>&quot;Lac&quot;</value>
+                  <value>&quot;Mem&quot;</value>
+                  <value>&quot;Mia&quot;</value>
+                  <value>&quot;Mil&quot;</value>
+                  <value>&quot;Min&quot;</value>
+                  <value>&quot;Phi&quot;</value>
+                  <value>&quot;Pho&quot;</value>
+                  <value>&quot;Tor&quot;</value>
+                  <value>&quot;Uta&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Error]' derivation='Sum' name='[sum:Error:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+              <text column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Team (group) 1]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{DEB079F7-0410-43FE-A101-9ECABAEAA90E}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>15 Most Overpaid Players</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2021_predictions' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2zvkf0j0whl61b0qtcy0qumgkd'>
+            <column datatype='integer' name='[Error]' role='measure' type='quantitative' />
+            <column caption='Full Name' datatype='string' name='[FULL NAME]' role='dimension' type='nominal' />
+            <column-instance column='[FULL NAME]' derivation='None' name='[none:FULL NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Error]' derivation='Sum' name='[sum:Error:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Andrew Wiggins&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Blake Griffin&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;D&apos;Angelo Russell&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Damian Lillard&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Gary Harris&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Goran Dragic&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Joe Harris&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;John Collins&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Kemba Walker&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Kevin Love&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Klay Thompson&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Kristaps Porzingis&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Markelle Fultz&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Russell Westbrook&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Tobias Harris&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+              <text column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{413FFADB-06B6-4765-B0F2-957E39BB5858}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Prediction Error by Market Size</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2021_predictions' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2zvkf0j0whl61b0qtcy0qumgkd'>
+            <column datatype='integer' name='[Error]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[TEAM]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Team (group) 2]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[TEAM]' new-bin='true'>
+                <bin default-name='false' value='&quot;Large Market Teams&quot;'>
+                  <value>&quot;Atl&quot;</value>
+                  <value>&quot;Bos&quot;</value>
+                  <value>&quot;Bro&quot;</value>
+                  <value>&quot;Chi&quot;</value>
+                  <value>&quot;Dal&quot;</value>
+                  <value>&quot;Gol&quot;</value>
+                  <value>&quot;Hou&quot;</value>
+                  <value>&quot;Lac&quot;</value>
+                  <value>&quot;Lal&quot;</value>
+                  <value>&quot;Nyk&quot;</value>
+                  <value>&quot;Phi&quot;</value>
+                  <value>&quot;Pho&quot;</value>
+                  <value>&quot;Tor&quot;</value>
+                  <value>&quot;Was&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Medium Market Teams&quot;'>
+                  <value>&quot;Cle&quot;</value>
+                  <value>&quot;Den&quot;</value>
+                  <value>&quot;Det&quot;</value>
+                  <value>&quot;Mia&quot;</value>
+                  <value>&quot;Min&quot;</value>
+                  <value>&quot;Orl&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Small Market Teams&quot;'>
+                  <value>&quot;Cha&quot;</value>
+                  <value>&quot;Ind&quot;</value>
+                  <value>&quot;Mem&quot;</value>
+                  <value>&quot;Mil&quot;</value>
+                  <value>&quot;Nor&quot;</value>
+                  <value>&quot;Okc&quot;</value>
+                  <value>&quot;Por&quot;</value>
+                  <value>&quot;Sac&quot;</value>
+                  <value>&quot;San&quot;</value>
+                  <value>&quot;Uta&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[Error]' derivation='Sum' name='[sum:Error:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+              <text column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Team (group) 2]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{5770D4A3-48CD-413A-AF43-069BE9B7C85C}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Prediction Error by Market Size</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2021_predictions' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2zvkf0j0whl61b0qtcy0qumgkd'>
+            <column datatype='integer' name='[Predicted Salary]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[TEAM]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Team (group) 2]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[TEAM]' new-bin='true'>
+                <bin default-name='false' value='&quot;Large Market Teams&quot;'>
+                  <value>&quot;Atl&quot;</value>
+                  <value>&quot;Bos&quot;</value>
+                  <value>&quot;Bro&quot;</value>
+                  <value>&quot;Chi&quot;</value>
+                  <value>&quot;Dal&quot;</value>
+                  <value>&quot;Gol&quot;</value>
+                  <value>&quot;Hou&quot;</value>
+                  <value>&quot;Lac&quot;</value>
+                  <value>&quot;Lal&quot;</value>
+                  <value>&quot;Nyk&quot;</value>
+                  <value>&quot;Phi&quot;</value>
+                  <value>&quot;Pho&quot;</value>
+                  <value>&quot;Tor&quot;</value>
+                  <value>&quot;Was&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Medium Market Teams&quot;'>
+                  <value>&quot;Cle&quot;</value>
+                  <value>&quot;Den&quot;</value>
+                  <value>&quot;Det&quot;</value>
+                  <value>&quot;Mia&quot;</value>
+                  <value>&quot;Min&quot;</value>
+                  <value>&quot;Orl&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Small Market Teams&quot;'>
+                  <value>&quot;Cha&quot;</value>
+                  <value>&quot;Ind&quot;</value>
+                  <value>&quot;Mem&quot;</value>
+                  <value>&quot;Mil&quot;</value>
+                  <value>&quot;Nor&quot;</value>
+                  <value>&quot;Okc&quot;</value>
+                  <value>&quot;Por&quot;</value>
+                  <value>&quot;Sac&quot;</value>
+                  <value>&quot;San&quot;</value>
+                  <value>&quot;Uta&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[True Salary]' role='measure' type='quantitative' />
+            <column-instance column='[TEAM]' derivation='None' name='[none:TEAM:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Predicted Salary]' derivation='Sum' name='[sum:Predicted Salary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[True Salary]' derivation='Sum' name='[sum:True Salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Team (group) 2]' />
+              <lod column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:TEAM:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Predicted Salary:qk]</rows>
+        <cols>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:True Salary:qk]</cols>
+      </table>
+      <simple-id uuid='{176A6B69-07EB-4A5D-B1E5-D6B0F33D0531}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Prediction Error by Team Success</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2021_predictions' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2zvkf0j0whl61b0qtcy0qumgkd'>
+            <column datatype='integer' name='[Predicted Salary]' role='measure' type='quantitative' />
+            <column caption='Team' datatype='string' name='[TEAM]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Team (group) 3]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[TEAM]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Playoff Teams&quot;'>
+                  <value>&quot;Bos&quot;</value>
+                  <value>&quot;Bro&quot;</value>
+                  <value>&quot;Chi&quot;</value>
+                  <value>&quot;Cle&quot;</value>
+                  <value>&quot;Dal&quot;</value>
+                  <value>&quot;Den&quot;</value>
+                  <value>&quot;Gol&quot;</value>
+                  <value>&quot;Lac&quot;</value>
+                  <value>&quot;Mem&quot;</value>
+                  <value>&quot;Mia&quot;</value>
+                  <value>&quot;Mil&quot;</value>
+                  <value>&quot;Min&quot;</value>
+                  <value>&quot;Phi&quot;</value>
+                  <value>&quot;Pho&quot;</value>
+                  <value>&quot;Tor&quot;</value>
+                  <value>&quot;Uta&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[True Salary]' role='measure' type='quantitative' />
+            <column-instance column='[TEAM]' derivation='None' name='[none:TEAM:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Predicted Salary]' derivation='Sum' name='[sum:Predicted Salary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[True Salary]' derivation='Sum' name='[sum:True Salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Team (group) 3]' />
+              <lod column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:TEAM:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Predicted Salary:qk]</rows>
+        <cols>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:True Salary:qk]</cols>
+      </table>
+      <simple-id uuid='{8F447D2F-D712-4101-AB61-FF101A273770}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>15 Most Underpaid Players</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2021_predictions' name='federated.0w2zvkf0j0whl61b0qtcy0qumgkd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2zvkf0j0whl61b0qtcy0qumgkd'>
+            <column datatype='integer' name='[Error]' role='measure' type='quantitative' />
+            <column caption='Full Name' datatype='string' name='[FULL NAME]' role='dimension' type='nominal' />
+            <column-instance column='[FULL NAME]' derivation='None' name='[none:FULL NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Error]' derivation='Sum' name='[sum:Error:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Andre Drummond&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Bobby Portis&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Carmelo Anthony&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Dejounte Murray&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;DeMar DeRozan&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Dorian Finney-Smith&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Jae&apos;Sean Tate&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Jalen Brunson&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Jonas Valanciunas&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Kyle Kuzma&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;LaMarcus Aldridge&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Miles Bridges&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Reggie Jackson&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Seth Curry&quot;' />
+              <groupfilter function='member' level='[none:FULL NAME:nk]' member='&quot;Shai Gilgeous-Alexander&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+              <text column='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[none:FULL NAME:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F52D07F6-C516-4106-8895-FAB8A3FBE902}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='16' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='14' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='67750' id='3' name='Sheet 1' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30250' id='8' type-v2='text' w='98400' x='800' y='68750'>
+                <formatted-text>
+                  <run>By contrasting 2022 All-Stars versus the rest of the league, it is apparent that the model is able to predict these players will make more money while still accounting for age. This results in players such as Luka Donic and Ja Morant having relatviely low predicted salaries even with their high, MVP-level production. The reason for this is NBA players must first complete their rookie contract (a preset amount based on their draft position) before they can negotiate a new, higher paying deal. Our model accounts for this fact with predictions of their salary in the sams range as their true number, while older players such as Kevin Durant and LeBron James, unconstrianed by this rule, have true and predicted salaries near 40 million dollars.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='64' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='63' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='67750' id='3' is-fixed='true' name='Sheet 1' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30250' id='8' type-v2='text' w='98400' x='800' y='68750'>
+                  <formatted-text>
+                    <run>By contrasting 2022 All-Stars versus the rest of the league, it is apparent that the model is able to predict these players will make more money while still accounting for age. This results in players such as Luka Donic and Ja Morant having relatviely low predicted salaries even with their high, MVP-level production. The reason for this is NBA players must first complete their rookie contract (a preset amount based on their draft position) before they can negotiate a new, higher paying deal. Our model accounts for this fact with predictions of their salary in the sams range as their true number, while older players such as Kevin Durant and LeBron James, unconstrianed by this rule, have true and predicted salaries near 40 million dollars.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FD4D04A5-757E-475F-9F79-85D141CD8001}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='54' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='43' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='40' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                  <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+                    <zone h='98000' id='45' name='Sheet 6' show-title='false' w='54500' x='44700' y='1000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='43500' id='52' name='Sheet 2' w='43900' x='800' y='1000'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='54500' id='55' type-v2='text' w='43900' x='800' y='44500'>
+                      <formatted-text>
+                        <run fontsize='12'>After dividing the NBA by playoff teams and non-playoff teams we see a stark differemce in R-squared. Our model is able to explain much of the variance for non-playoff teams as they are in most cases far less aggressive in signing players, and thus, pay them much more in line with their pay. While playoff teams, in pursuit of an NBA championship, offer higher salaries to entice players to join their teams. </run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='65' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='64' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='43500' id='52' is-fixed='true' name='Sheet 2' w='43900' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='45' is-fixed='true' name='Sheet 6' show-title='false' w='54500' x='44700' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='54500' id='55' type-v2='text' w='43900' x='800' y='44500'>
+                  <formatted-text>
+                    <run fontsize='12'>After dividing the NBA by playoff teams and non-playoff teams we see a stark differemce in R-squared. Our model is able to explain much of the variance for non-playoff teams as they are in most cases far less aggressive in signing players, and thus, pay them much more in line with their pay. While playoff teams, in pursuit of an NBA championship, offer higher salaries to entice players to join their teams. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D6A412C9-B971-43C1-A1CD-FFEDE5195770}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='14' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='38500' id='9' type-v2='text' w='98400' x='800' y='60500'>
+                <formatted-text>
+                  <run>The model&apos;s largest prediction errors make sense when looking at the player&apos;s salary with context. For instance, in the case of Blake Griffin and Kemba Walker, their 2022 salary is so high because two teams are paying them, meaning that they were so overpaid relative to their production that their orginal teams (Detroit Pistions and Oklahoma CIty Thunder) agreed to buy them out. Meaning these teams would literally pay these players not to be on the team anymore. Other overpaid players (Markelle Fultz and Klay Thompson) have just recently returned from season ending injuries.
+
+In regards to underpaid players, Jalen Brunson and Ja&apos;Sean Tate are both 2nd round and undrafted players, therefore making a set, realtively extremly low salary.  This shows an additional future variable to use in this model could be draft position. </run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='59500' id='12' name='Sheet 7' w='49200' x='50000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='59500' id='16' name='Sheet 3' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='43' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='59500' id='16' is-fixed='true' name='Sheet 3' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59500' id='12' is-fixed='true' name='Sheet 7' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='38500' id='9' type-v2='text' w='98400' x='800' y='60500'>
+                  <formatted-text>
+                    <run>The model&apos;s largest prediction errors make sense when looking at the player&apos;s salary with context. For instance, in the case of Blake Griffin and Kemba Walker, their 2022 salary is so high because two teams are paying them, meaning that they were so overpaid relative to their production that their orginal teams (Detroit Pistions and Oklahoma CIty Thunder) agreed to buy them out. Meaning these teams would literally pay these players not to be on the team anymore. Other overpaid players (Markelle Fultz and Klay Thompson) have just recently returned from season ending injuries.
+
+In regards to underpaid players, Jalen Brunson and Ja&apos;Sean Tate are both 2nd round and undrafted players, therefore making a set, realtively extremly low salary.  This shows an additional future variable to use in this model could be draft position. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1A95F0B6-1492-495C-969C-A3537200E3DE}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Sheet 5' show-title='false' w='55400' x='43800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='9' name='Sheet 4' w='43000' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='10' type-v2='text' w='43000' x='800' y='50000'>
+                <formatted-text>
+                  <run fontsize='12'>By splitting the NBA teams by their respective market sizes, it becomes apparent that their is a stark contrast in how they operate. The prediction error of our model increases as the market size increases, indicating that the teams from larger markets tend to overpay for players as they can afford to. </run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontsize='12'>The teams from small markets have an R-squared value of 0.87, showing that our model can explain an extremely high amount of variance for these teams as thye tend to pay players a more &apos;fair&apos; rate for their production.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='9' is-fixed='true' name='Sheet 4' w='43000' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 5' show-title='false' w='55400' x='43800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='49000' id='10' type-v2='text' w='43000' x='800' y='50000'>
+                  <formatted-text>
+                    <run fontsize='12'>By splitting the NBA teams by their respective market sizes, it becomes apparent that their is a stark contrast in how they operate. The prediction error of our model increases as the market size increases, indicating that the teams from larger markets tend to overpay for players as they can afford to. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontsize='12'>The teams from small markets have an R-squared value of 0.87, showing that our model can explain an extremely high amount of variance for these teams as thye tend to pay players a more &apos;fair&apos; rate for their production.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DE41DD1D-E0B2-49EF-A3B2-1082DF7DBC9D}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Model Evaluation</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Player Salary Predictions' captured-sheet='Dashboard 1' id='1'>
+                    <capturedDeltas>
+                      <dashboard name='Dashboard 1'>
+                        <zone id='8'>
+                          <formatted-text>
+                            <run fontsize='12'>By contrasting 2022 All-Stars versus the rest of the league, it is apparent that the model is able to predict these players will make more money while still accounting for age. This results in players such as Luka Donic and Ja Morant having relatviely low predicted salaries even with their high, MVP-level production. The reason for this is NBA players must first complete their rookie contract (a preset amount based on their draft position) before they can negotiate a new, higher paying deal. Our model accounts for this fact with predictions of their salary in the sams range as their true number, while older players such as Kevin Durant and LeBron James, unconstrianed by this rule, have true and predicted salaries near 40 million dollars.</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Players with Highest Prediction Errors' captured-sheet='Dashboard 3' id='3'>
+                    <capturedDeltas>
+                      <dashboard name='Dashboard 3'>
+                        <zone id='9'>
+                          <formatted-text>
+                            <run fontsize='12'>The model&apos;s largest prediction errors make sense when looking at the player&apos;s salary with context. For instance, in the case of Blake Griffin and Kemba Walker, their 2022 salary is so high because two teams are paying them, meaning that they were so overpaid relative to their production that their orginal teams (Detroit Pistions and Oklahoma CIty Thunder) agreed to buy them out. Meaning these teams would literally pay these players not to be on the team anymore. Other overpaid players (Markelle Fultz and Klay Thompson) have just recently returned from season ending injuries.</run>
+                            <run>Æ&#10;&#10;</run>
+                            <run fontsize='12'>In regards to underpaid players, Jalen Brunson and Ja&apos;Sean Tate are both 2nd round and undrafted players, therefore making a set, realtively extremly low salary.  This shows an additional future variable to use in this model could be draft position. </run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Salary Predictions by Team Success' captured-sheet='Dashboard 2' id='2'>
+                    <capturedDeltas>
+                      <dashboard name='Dashboard 2'>
+                        <zone id='21'>
+                          <formatted-text>
+                            <run fontsize='12'>After dividing the NBA by playoff teams and non-playoff teams we see a stark differemce in R-squared. Our model is able to explain much of the variance for non-playoff teams as they are in most cases far less aggressive in signing players, and thus, pay them much more in line with their pay. While playoff teams, in pursuit of an NBA championship, offer higher salaries to entice players to join their teams. </run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Salary Predictions by Market Size' captured-sheet='Dashboard 4' id='4'>
+                    <capturedDeltas>
+                      <dashboard name='Dashboard 4'>
+                        <zone id='10'>
+                          <formatted-text>
+                            <run fontsize='12'>By splitting the NBA teams by their respective market sizes, it becomes apparent that their is a stark contrast in how they operate. The prediction error of our model increases as the market size increases, indicating that the teams from larger markets tend to overpay for players as they can afford to. </run>
+                            <run>Æ&#10;&#10;</run>
+                            <run fontsize='12'>The teams from small markets (Red) have an R-squared value of 0.87, showing that our model can explain an extremely high amount of variance for these teams as thye tend to pay players a more &apos;fair&apos; rate for their production. More unexplained variance comes into play when the model predicts on medium (Orange) and large (Blue) market teams.</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{8CB6EE30-40C4-44D9-9B34-B7C5590C11A6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Full Name (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E44D2509-F641-4E5E-8B84-0611C0546CC9}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{EF012E4E-7E52-4BD4-AC3B-F5FA50A3CA32}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8474A0DC-9229-4E79-BD7D-FA50CFDCB095}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07B03212-70DD-445B-8C8F-F34EDD5225B0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{E44F9181-0B4B-4871-B00B-AA233FBF0961}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4AB7D675-8B97-40D2-B2B7-2D08B2B6CBC1}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FDF66F98-251D-4787-8842-62B87EE4DAED}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Team (group) 2]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{875373D3-4A5B-4048-938E-4DB436839400}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[Team (group) 3]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E77595A-4843-4A41-B8C4-DCC99FD9AB87}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 7' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AE388BFF-663F-4804-9A8E-3C990BCD80E7}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w2zvkf0j0whl61b0qtcy0qumgkd].[sum:Error:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2E8988A9-9B65-46C3-8920-1E97F3854468}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CCB28BE3-987C-4394-A53B-AFF66B7957B1}' />
+    </window>
+  </windows>
+</workbook>

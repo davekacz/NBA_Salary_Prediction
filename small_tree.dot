@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="MIN% <= 0.2\nsquared_error = 484.5\nsamples = 2331\nvalue = 83.1"] ;
+1 [label="2PA <= -0.8\nsquared_error = 346.5\nsamples = 1358\nvalue = 72.8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AGE <= 0.2\nsquared_error = 363.0\nsamples = 523\nvalue = 62.2"] ;
+1 -> 2 ;
+3 [label="squared_error = 281.8\nsamples = 372\nvalue = 58.1"] ;
+2 -> 3 ;
+4 [label="squared_error = 416.7\nsamples = 151\nvalue = 72.6"] ;
+2 -> 4 ;
+5 [label="AGE <= 0.1\nsquared_error = 220.8\nsamples = 835\nvalue = 79.5"] ;
+1 -> 5 ;
+6 [label="squared_error = 154.4\nsamples = 480\nvalue = 74.1"] ;
+5 -> 6 ;
+7 [label="squared_error = 215.7\nsamples = 355\nvalue = 87.0"] ;
+5 -> 7 ;
+8 [label="AGE <= -0.6\nsquared_error = 318.1\nsamples = 973\nvalue = 97.7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="2PA <= -0.9\nsquared_error = 220.6\nsamples = 288\nvalue = 84.7"] ;
+8 -> 9 ;
+10 [label="squared_error = 19.7\nsamples = 6\nvalue = 39.0"] ;
+9 -> 10 ;
+11 [label="squared_error = 181.4\nsamples = 282\nvalue = 85.7"] ;
+9 -> 11 ;
+12 [label="PPG <= 0.9\nsquared_error = 257.6\nsamples = 685\nvalue = 103.2"] ;
+8 -> 12 ;
+13 [label="squared_error = 206.7\nsamples = 413\nvalue = 96.8"] ;
+12 -> 13 ;
+14 [label="squared_error = 173.8\nsamples = 272\nvalue = 113.1"] ;
+12 -> 14 ;
+}
