@@ -12,10 +12,7 @@ Train the model on all previous season data.  Apply a scaling factor where appro
 
 Inaccuracies aren't exactly *wrong*.  We can consider the results what a player is actually worth.  Doing some testing on the simple models, Steph Curry in 2019 was worst prediction.  Something like 30M difference.  But that season he was hurt and only played 5 games.  So maybe he wasn't worth his 40M contract?  
 
-Anyway we can see what our model thinks a player is worth, highlight some highs and lows.  Then do a groupby on teams and do the same.  
-
-
-* Regular Stats vs Advanced Stats.  Does including advanced stats in the model make them perform significantly more accurately?  Not sure if I feel like adding this...  
+Anyway we can see what our model thinks a player is worth, highlight some highs and lows.  Then do a groupby on teams and do the same.   
 
 ## Data Clean Up Notes
 
@@ -53,16 +50,7 @@ https://scikit-learn.org/stable/supervised_learning.html
 
 ### Scoring
 
-* When we cross validate should we drop the same players through all years? -- Meh...  Didn't do this
-
 * Will need to transform results from models with inverse box cox transformation to come up with meaningful analysis.
-
-
-## Other thoughts
-
-How to handle 2020 covid season
-
-How to handle current partial season data.  
 
 ### Sources
 
