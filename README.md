@@ -10,9 +10,13 @@ We have concluded that the random forest is the best performing model and the SV
 
 #### Folders
 * Data includes the datasets we created from the following sources:  
+* 
 Player statistics and performance analytics: https://www.nbastuffer.com/2020-2021-nba-player-stats/ 
+
 Season Salary Caps:  https://www.spotrac.com/nba/cba/ 
+
 Player Salaries: https://hoopshype.com/salaries/players/2020-2021/ 
+
 
 * Images includes some of the images we utilized for the report
 * Results includes the output of SKLearns Grid Search CV on all our models
