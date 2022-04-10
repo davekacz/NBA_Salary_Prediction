@@ -29,7 +29,9 @@ Player Salaries: https://hoopshype.com/salaries/players/2020-2021/
 * 4_models_final.ipynb - The file that trains all of our models to the find the best performing model.  
 * 5_review_results.ipynb - The file to review the models as well as the file used for our analysis on the 2021 season.
 
+
 * README_notes.md - Our readme while we working on the project to jot notes down on.
+
 
 * results_2021_predictions.csv - The output of our analysis applied to the 2021 season.  Shows players and their predicted and true salaries in 2021.
 * results_model_results.csv - Includes all the results from the training of the models.  
