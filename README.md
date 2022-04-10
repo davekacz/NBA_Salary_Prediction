@@ -17,17 +17,19 @@ Season Salary Caps:  https://www.spotrac.com/nba/cba/
 
 Player Salaries: https://hoopshype.com/salaries/players/2020-2021/ 
 
-
 * Images includes some of the images we utilized for the report
 * Results includes the output of SKLearns Grid Search CV on all our models
 * Tableau Files includes the files we built in tableau for visualizations.
 
 #### Files
-* 2021_predictions.csv - The output of our analysis applied to the 2021 season.  Shows players and their predicted and true salaries in 2021.
+
+* 1_data_prep.ipynb - The file we used to scrape and build the dataset to be input into the model.  Includes all the data cleaning operations.  
+* 2_data_explore.ipynb - Our initial file to explore the dataset after it was built.  Includes lots of plots.
+* 3_model_explore.ipynb - Includes our first attempt at training some models to get an idea of what would work well.  
+* 4_models_final.ipynb - The file that trains all of our models to the find the best performing model.  
+* 5_review_results.ipynb - The file to review the models as well as the file used for our analysis on the 2021 season.
+
 * README_notes.md - Our readme while we working on the project to jot notes down on.
-* data_explore.ipynb - Our initial file to explore the data.  Includes lots of plots.
-* data_prep.ipynb - The file we used to scrape and build the dataset to be input into the model.  Includes all the data cleaning operations.  
-* model_results.csv - Includes all the results from the training of the models.  
-* model_explore.ipynb - Includes our first attempt at training some models to get an idea of what would work well.  
-* models_final.ipynb - The file that trains all of our models to the find the best performing model.  
-* review_results.ipynb - The file to review the models as well as the file used for our analysis on the 2021 season.
+
+* results_2021_predictions.csv - The output of our analysis applied to the 2021 season.  Shows players and their predicted and true salaries in 2021.
+* results_model_results.csv - Includes all the results from the training of the models.  
