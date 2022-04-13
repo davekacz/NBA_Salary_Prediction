@@ -1,11 +1,11 @@
 mean_fit_time,mean_score_time,params,mean_test_score,std_test_score,Model Type,Training Data
-6.2684238910675045,0.0882006645202636,"{'max_depth': 25, 'max_features': 10, 'n_estimators': 250}",9.148184643120109,0.2028835138974416,Random Forest,Full Dataset
-1.369900608062744,0.6120014667510987,"{'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}",9.422904911609942,0.2311800898402809,SVM,Full Dataset
-0.0112046718597412,0.1517952919006347,"{'n_neighbors': 20, 'p': 2, 'weights': 'distance'}",9.727063124647882,0.2189478389862282,KNN,Full Dataset
-10.464160871505737,0.1609998226165771,"{'learning_rate': 0.01, 'n_estimators': 500}",9.78160917191283,0.2021893172987551,AdaBoost DT Regression,Full Dataset
-0.0107982158660888,0.0042000293731689,{'alpha': 0.1},9.873623685850912,0.2998749045574052,Ridge Regression,Full Dataset
-0.930260181427002,0.0042047023773193,"{'alpha': 0.001, 'l1_ratio': 0.9}",9.876401606364375,0.2909650040095151,Elastic Net Regression,Full Dataset
-0.1578030109405517,0.0043968677520751,{'alpha': 0.001},9.87849357695642,0.2865284169660236,Lasso Regression,Full Dataset
-1.233958721160889,0.5588924407958984,"{'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}",10.836493702591689,0.3056963026106276,SVM,Subset Dataset
-0.0101969242095947,0.0522021770477294,"{'n_neighbors': 50, 'p': 1, 'weights': 'uniform'}",10.9289728210457,0.347284183591276,KNN,Subset Dataset
-0.0110012054443359,0.0019990921020507,{'fit_intercept': True},11.394374739359677,0.3143417539745036,Linear Regression,Subset Dataset
+6.27,0.09,"{'max_depth': 25, 'max_features': 10, 'n_estimators': 250}",9.15,0.2,Random Forest,Full Dataset
+1.37,0.61,"{'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}",9.42,0.23,SVM,Full Dataset
+0.01,0.15,"{'n_neighbors': 20, 'p': 2, 'weights': 'distance'}",9.73,0.22,KNN,Full Dataset
+10.46,0.16,"{'learning_rate': 0.01, 'n_estimators': 500}",9.78,0.2,AdaBoost DT Regression,Full Dataset
+0.01,0.0,{'alpha': 0.1},9.87,0.3,Ridge Regression,Full Dataset
+0.93,0.0,"{'alpha': 0.001, 'l1_ratio': 0.9}",9.88,0.29,Elastic Net Regression,Full Dataset
+0.16,0.0,{'alpha': 0.001},9.88,0.29,Lasso Regression,Full Dataset
+1.23,0.56,"{'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}",10.84,0.31,SVM,Subset Dataset
+0.01,0.05,"{'n_neighbors': 50, 'p': 1, 'weights': 'uniform'}",10.93,0.35,KNN,Subset Dataset
+0.01,0.0,{'fit_intercept': True},11.39,0.31,Linear Regression,Subset Dataset
